@@ -1,0 +1,34 @@
+<table class="table table-hover" ng-controller="leagueController">
+        <thead class="thead">
+                <tr>
+                      <th>#</th>
+                      <th>Barclays Premier League</th>
+                      <th>P</th>
+                      <th>W</th>
+                      <th>D</th>
+                      <th>L</th>
+                      <th>GF</th>
+                      <th>GA</th>
+                      <th>GD</th>
+                      <th>Pts</th>
+                </tr>
+        </thead>
+          
+        <tbody>
+                <tr ng-repeat="t in table">
+                        <th scope="row">{{t.position}}</th>
+                        <td>
+                           <img ng-src="{{t.crestURI}}" style="height:25px;padding-right: 5px;margin: 0 auto;" />
+                           {{t.teamName}}
+                        </td>
+                        <td>{{t.playedGames}}</td>
+                        <td>{{t.wins}}</td>
+                        <td>{{t.draws}}</td>
+                        <td>{{t.losses}}</td>
+                        <td>{{t.goals}}</td>
+                        <td>{{t.goalsAgainst}}</td>
+                        <td>{{t.goalDifference}}</td>
+                        <td class="active"><strong>{{t.points}}</strong></td>
+                </tr>
+         </tbody>
+</table> 
