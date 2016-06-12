@@ -1,5 +1,4 @@
 <div class="panel panel-default" ng-repeat="p in players | orderBy:'jerseyNumber'">
-    
     <div class="panel-heading">
         <h3><span class="glyphicon glyphicon-user"></span>     {{p.name}} ({{p.nationality}})</h3>
     </div>
@@ -10,5 +9,4 @@
         <p><span class="glyphicon glyphicon-pencil"></span>     <strong>Contract expires: </strong> {{p.contractUntil}}</p>
         <p><span class="glyphicon glyphicon-euro"></span>       <strong>Market value (approx): </strong> {{p.marketValue}}</p>
     </div>
-    
 </div>
